@@ -9,7 +9,6 @@ router.get('/', async (req, res) => {
     res.send(await posts.find({}).toArray())
 })
 
-
 /* Add Post */
 router.post('/', async (req,res) => {
     const posts = await loadPostsCollection()
